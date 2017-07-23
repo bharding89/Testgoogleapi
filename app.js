@@ -1,3 +1,7 @@
+ 
+   var geocoder = new google.maps.Geocoder();
+   var address = '28208';
+   
  if (geocoder) {
       geocoder.geocode({ 'address': address }, function (results, status) {
          if (status == google.maps.GeocoderStatus.OK) {
@@ -17,8 +21,7 @@
    var queryURL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?radius=" + radius + "&location=" + lat + "," + lng + "&key=" + api + "&type=park";
    console.log(queryURL);
 
-   var geocoder = new google.maps.Geocoder();
-   var address = '28208';
+
 
   
      $.ajax({
